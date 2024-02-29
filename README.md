@@ -20,6 +20,33 @@ To begin using the Email Service API, follow these steps:
 4. Start the server with `npm run start`.
 5. Run Prisma Studio to access the database `npx prisma studio`.
 
+## Rotas
+
+Descrição das rotas disponíveis na API.
+
+### Clientes
+
+- `POST /api/v1/client`: Cria um novo cliente.
+- `GET /api/v1/client`: Lista todos os clientes.
+- `GET /api/v1/client/:id`: Obtém detalhes de um cliente específico.
+- `PUT /api/v1/client/:id`: Atualiza um cliente específico.
+- `DELETE /api/v1/client/:id`: Exclui um cliente específico.
+
+### Produtos
+
+- `POST /api/v1/product`: Cria um novo produto.
+- `GET /api/v1/product`: Lista todos os produtos.
+- `GET /api/v1/product/:id`: Obtém detalhes de um produto específico.
+- `PUT /api/v1/product/:id`: Atualiza um produto específico.
+- `DELETE /api/v1/product/:id`: Exclui um produto específico.
+
+### Vendas
+
+- `POST /api/v1/sale`: Cria uma nova venda.
+- `GET /api/v1/sale`: Lista todas as vendas.
+- `GET /api/v1/sale/:id`: Obtém detalhes de uma venda específica.
+- `PUT /api/v1/sale/:id`: Atualiza uma venda específica.
+- `DELETE /api/v1/sale/:id`: Exclui uma venda específica.
 
 ## License
 
