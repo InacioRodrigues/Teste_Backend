@@ -3,6 +3,7 @@ sistema de gerenciamento de venda
 
 ## Descrição
 Este teste tem como objetivo avaliar habilidades no desenvolvimento de backend, utilizando o NestJS, Prisma e Docker.
+
 ## Tecnologias Utilizadas
 
 - NestJS
@@ -16,9 +17,8 @@ To begin using the Email Service API, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Install the required dependencies with `npm install`.
-3. Configure the environment variables needed for Nodemailer.
-4. Start the server with `npm run start`.
-5. Run Prisma Studio to access the database `npx prisma studio`.
+3. Start the server with `npm run start:dev`.
+4. Run Prisma Studio to access the database `npx prisma studio`.
 
 ## Rotas
 
