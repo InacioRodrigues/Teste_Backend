@@ -1,8 +1,17 @@
+
 FROM node:20
-WORKDIR /app
+
+WORKDIR /usr/src/app
+
 COPY package*.json ./
+
+
 RUN npm install
-COPY ./prisma ./dist/src/database
-RUN npx prisma generate
-WORKDIR /app/dist/src/database
-CMD ["npm", "start"]
+
+
+COPY . .
+
+
+EXPOSE 3000
+
+CMD ["npm", "run", "start"]

@@ -1,9 +1,21 @@
 version: '3.8'
 services:
-   app:
-     build: .
-     ports:
-       - "3000:3000"
-     volumes:
-       - .:/app
-     command: npm run start
+ app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+    command: npm run start
+    depends_on:
+      - db
+
+ db:
+    image: "prisma/sqlite:3.8.1"
+    volumes:
+      - db-data:/var/lib/sqlite
+    environment:
+      - DATABASE_URL=file:./dev.db
+
+volumes:
+ db-data:
